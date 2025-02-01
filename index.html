@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星宇虛擬航空 STARLUX VA</title>
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1275411810635218964/1334934464949784586/unnaSmed.png?ex=679e561a&is=679d049a&hm=38f8b09100dcea3f5bff9ace2f504bae81336c0a47564f22ab3fc845c6430bab&">
+  <meta name="description" content="星宇虛擬航空，帶您翱翔星空，享受極致奢華的飛行體驗。">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+
+<body>
+  <header id="navbar">
+    <div class="logo-container">
+      <img src="https://media.discordapp.net/attachments/1275411810635218964/1334934464949784586/unnaSmed.png" alt="STARLUX VA">
+      <h1>星宇虛擬航空 STARLUX VA</h1>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="#services">尊榮體驗</a>
+      <a href="#destinations">目的地</a>
+      <a href="#membership">會員計畫</a>
+      <a href="https://discord.gg/ckUTDYV8Ec">加入我們</a>
+      <a href="https://newsky.app/home" class="login-button">飛行員登入</a>
+  </nav>
+  </header>
+
+  <section class="hero">
+    <h1>探索星際，翱翔宇宙</h1>
+    <p>星宇虛擬航空提供極致奢華的飛行體驗，無論您前往何處，皆可感受尊榮與舒適。</p>
+    <a href="https://discord.gg/ckUTDYV8Ec" class="cta-button">加入我們</a>
+  </section>
+
+  <section class="content">
+    <div class="content-text">
+      <h2>快樂學習</h2>
+      <p>我們致力於提供學員快樂的學習環境</p>
+      <h2>新創公司</h2>
+      <p>現在加入我們，成為創始成員</p>
+      <h2>台灣本土</h2>
+      <p>成員由中文群體組成，不必擔心溝通問題</p>
+    </div>
+    <div class="map-info">
+      <h2>IVAO即時航班雷達</h2>
+      <iframe src="https://webeye.ivao.aero"></iframe>
+    </div>
+    <div class="flight-info">
+      <h2>VATSIM即時航班資訊</h2>
+      <iframe src="https://vatboard.estassinos.com/?icao=RCTP"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 星宇虛擬航空 STARLUX VA. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", function() {
+      let navbar = document.getElementById("navbar");
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop && currentScroll > 100) {
+        navbar.style.top = "-100px";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollTop = currentScroll;
+    });
+  </script>
+</body>
+
+</html>
